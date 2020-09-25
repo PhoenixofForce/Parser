@@ -1,0 +1,11 @@
+var ID var
+number Float var
+float Float var
+lpar Normal L_PAR
+rpar Normal R_PAR
+eql Normal EQL
+plus Normal PLUS
+minus Normal MINUS
+semi Normal SEMI
+blank Normal IGNORE
+default Normal ERROR

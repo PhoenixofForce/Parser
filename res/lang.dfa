@@ -1,0 +1,38 @@
+states
+start      - s
+var        - e
+number     - e
+float_s
+float      - e
+lpar       - e
+rpar       - e
+eql        - e
+plus       - e
+minus      - e
+semi       - e
+blank      - e
+
+transitions
+
+#STARTS
+start [A-z] var
+start [0-9] number
+
+var [A-z] var
+
+number [0-9] number
+number \. float_s
+
+float_s [0-9] float
+float [0-9] float
+
+start \( lpar
+start \) rpar
+start ; semi
+start = eql
+start \+ plus
+start - minus
+start \s blank
+start \t blank
+start \r blank
+start \n blank
